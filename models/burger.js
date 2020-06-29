@@ -1,6 +1,6 @@
 const orm = require("../config/orm.js");
 
-let burger = {
+const burger = {
 
     selectAll: function(cb) {
         orm.selectAll("burgers", function(res) {
@@ -8,8 +8,8 @@ let burger = {
         })
     },
 
-    insertOne: function(col, val, cb) {
-        orm.insertOne("burgers", col, val, function(res) {
+    insertOne: function(col1, col2, val1, val2, cb) {
+        orm.insertOne("burgers", col1, col2, val1, val2, function(res) {
             cb(res);
         })
     },
@@ -22,5 +22,3 @@ let burger = {
 };
 
 module.exports = burger;
-
-// For insert I only have the burger name; devoured truthy statement NOT included;
