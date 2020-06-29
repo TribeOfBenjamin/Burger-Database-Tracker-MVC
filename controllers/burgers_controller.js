@@ -34,5 +34,7 @@ router.put("/api/burgers/:id", function(req, res) {
     });
 });
 
+module.exports = router;
+
 // For insert I only have the burger name; devoured truthy statement NOT included;
 // USE ARRAYS (LIKE IN CATS.JS) IF ADD DEVOURED!
