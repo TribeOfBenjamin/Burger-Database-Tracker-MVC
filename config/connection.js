@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 
-const connection;
+// const connection
 // = mysql.createConnection({
 //   host: "localhost",
 //   port: 3306,
@@ -9,24 +9,24 @@ const connection;
 //   database: "burgers_db"
 // });
 
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-  connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "NewYork1991",
-    database: "burgers_db"
-  });
-};
-
-
-// const connection = mysql.createConnection({
-//     host: process.env.HOST,
-//     user: process.env.USER,
-//     password: process.env.PASSWORD,
-//     database: process.env.DATABASE
+// if (process.env.JAWSDB_URL) {
+//   connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else {
+//   connection = mysql.createConnection({
+//     host: "localhost",
+//     user: "root",
+//     password: "NewYork1991",
+//     database: "burgers_db"
 //   });
+// };
+
+
+const connection = mysql.createConnection({
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
+  });
 
 
 connection.connect(function(err) {
