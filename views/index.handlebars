@@ -2,6 +2,7 @@
 
 <h1>Burgers!</h1>
 
+<div class="column">
 <ul id="left">
   {{#each burgers}}
     {{#unless devoured}}
@@ -9,7 +10,9 @@
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
+<div class="column">
 <ul id="right">
   {{#each burgers}}
     {{#if devoured}}
@@ -17,6 +20,7 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
 
 <h2>Add a Burger</h2>
@@ -27,5 +31,5 @@
     <input type="text" id="burg" name="name">
   </div>
 
-  <button type="submit">Submit</button>
+  <button class="submitBtn" type="submit">Submit</button>
 </form>
