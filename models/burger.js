@@ -15,6 +15,7 @@ const burger = {
     },
 
     updateOne: function(upCol, upVal, condCol, condVal, cb) {
+        console.log(upVal);
         orm.updateOne("burgers", upCol, upVal, condCol, condVal, function(res) {
             cb(res);
         })

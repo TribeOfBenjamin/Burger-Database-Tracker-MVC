@@ -22,6 +22,7 @@ const orm = {
     },
     updateOne: function(table, updatedCol, updatedVal, conditionCol, conditionVal, burgerCb) {
         let queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
+      console.log(table,updatedCol,updatedVal,conditionCol, conditionVal)
         connection.query(queryString, [table, updatedCol, updatedVal, conditionCol, conditionVal], function(err, result) {
             if (err) throw err;
             console.log(result);
