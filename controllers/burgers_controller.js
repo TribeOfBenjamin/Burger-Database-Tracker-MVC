@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
 
     });
 });
-// CHECK OUT CALL BACKS AND ARGUMENTS PASSED IN FOR POST AND PUT (LIKE IN GET WITH GODFREY)
+
 router.post("/api/burgers", function(req, res) {
     burger.insertOne("burger_name", "devoured", req.body.burger_name, 0, function(result) {
         res.json({ id: result.insertId });

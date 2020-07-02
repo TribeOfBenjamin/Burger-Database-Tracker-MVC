@@ -1,18 +1,18 @@
 <h1>Burgers!</h1>
 
-<ul>
+<ul id="right">
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<ul id="left">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/unless}}
-  {{/each}}
-</ul>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
   {{/each}}
 </ul>
 
