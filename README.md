@@ -4,5 +4,6 @@ This app lets you keep track of the burgers you've eaten. Once a burger has been
 ## Images
 ----
 ![](public/assets/images/burger_home.png)
-
+----
+![](public/assets/images/burger_list.png)
 
