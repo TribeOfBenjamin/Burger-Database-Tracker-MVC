@@ -1,4 +1,3 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
 console.log("javascript loaded");
 $(function() {
 
@@ -32,7 +31,6 @@ $(function() {
       let newBurger = {
         burger_name: $("#burg").val().trim(),
         devoured: 0
-        // Don't need devoured here if default = false
       };
       console.log(newBurger);
       // Send the POST request.

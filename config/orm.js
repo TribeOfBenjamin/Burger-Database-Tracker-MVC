@@ -9,8 +9,6 @@ const orm = {
             console.log(result);
             burgerCb(result);
         });
-        // Note: This is the end point! This is where the database is queried.
-        // THIS IS WHERE THE PROBLEM WAS; DIDNT HAVE burgerCb in line 5 and 10; DO THIS FOR OTHER TWO FUNCTIONS!
     },
     insertOne: function(table, col1ToInsert, col2ToInsert, val1ToInsert, val2ToInsert, burgerCb) {
         let queryString = "INSERT INTO ?? (??, ??) VALUES (?, ?)";
