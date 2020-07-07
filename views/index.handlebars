@@ -14,6 +14,19 @@
   </div>
 
   <div class="column">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+      <div class="form-group">
+        <label for="burg">Enter a burger you'd like to eat:</label>
+        <input type="text" id="burg" name="name">
+      </div>
+
+      <button id="submitBtn">Submit</button>
+    </form>
+  </div>
+
+  <div class="column">
     <ul id="right">
       {{#each burgers}}
         {{#if devoured}}
@@ -25,14 +38,3 @@
     </ul>
   </div>
 </div>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burg">Enter a burger you'd like to eat:</label>
-    <input type="text" id="burg" name="name">
-  </div>
-
-  <button id="submitBtn">Submit</button>
-</form>
